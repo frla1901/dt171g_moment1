@@ -63,9 +63,7 @@ Exempelvis fann jag följande...
 
 **frida@MacBook-Pro C#_test %**
 
-Undersökte vilket C# compiler version som var kompatibel med den version av .NET Core SDK jag har installerat (5.0.402) och det var version 9.0 vilket jag inkluderat i .csproj filen på följande sätt:
-
-###### <LangVersion>9.0</LangVersion>
+Undersökte vilket C# compiler version som var kompatibel med den version av .NET Core SDK jag har installerat (5.0.402) och det var version 9.0 vilket jag inkluderat i .csproj filen inom LangVersion taggen. 
 
 
 
