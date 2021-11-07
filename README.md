@@ -53,3 +53,24 @@ Jag valde att testa vidare och ändrade innehållet i metoden _Main_ som i exemp
 
 Jag hade glömt att starta Git lokalt men hade skapat detta remote repo i förväg så gjorde Commit och Pushade det. 
 Fortsätter att testa mig vidare under den närmaste veckan! 
+
+Har under veckan påbörjat att följa bokens instruktioner i kapitel 2 och skapat nya projekt med kommandot _dotnet new console_ vilket varit lärorikt. 
+Exempelvis fann jag följande...
+
+frida@MacBook-Pro C#_test % csc -langversion:?
+zsh: no matches found: -langversion:?
+frida@MacBook-Pro C#_test % 
+
+Undersökte vilket C# compiler version som var kompatibel med den version av .NET Core SDK jag har installerat (5.0.402) och det var version 9.0 vilket jag inkluderat i .csproj filen på följande sätt:
+
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    **<LangVersion>9.0</LangVersion>**
+    <RootNamespace>C__test</RootNamespace>
+  </PropertyGroup>
+
+</Project>
+
