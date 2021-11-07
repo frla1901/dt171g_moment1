@@ -65,7 +65,7 @@ Exempelvis fann jag följande...
 
 Undersökte vilket C# compiler version som var kompatibel med den version av .NET Core SDK jag har installerat (5.0.402) och det var version 9.0 vilket jag inkluderat i .csproj filen på följande sätt:
 
+###### <LangVersion>9.0</LangVersion>
 
-<LangVersion>9.0</LangVersion>
 
 
